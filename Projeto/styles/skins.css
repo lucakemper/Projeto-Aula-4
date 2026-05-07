@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-image: url(../images/armasreal.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main {
+    width: 60%;
+    margin: 0 auto;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 100vh;
+}
+
+#armas {
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); /* Corrigido rgb() vazio */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.arma {
+    width: 300px; /* Corrigido de 10000px para um tamanho real de card */
+    border: 3px solid rgb(50, 50, 50);
+    background-color: rgb(20, 20, 20);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    color: white; /* Adicionado para o texto ficar visível */
+}
+
+.arma img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Corrigido o erro de sintaxe do ".var doce" */
+.arma {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+}
